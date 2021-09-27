@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+
+    <!--    Iconos Font-awesome -->
+    <link rel="stylesheet" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <title>Quick - Pokemones</title>
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2">
+                <img src="assets/img/logo.png" style="width: 80%; padding: 2em 0 4em 0;" alt="Welcome to Quick">
+
+                <div class="col-lg-5 offset-lg-1 d-flex align-items-center" align="center">
+                    <i style="color:yellow; font-size:x-large" class="fa fa-filter"
+                        aria-hidden="true"></i>&nbsp;&nbsp;
+                        <h5><b>Filters</b></h5>
+                        
+                </div>
+                <label>En este Sprint los filtro trabajan indivuales, seleccione solo 1 a la vez.</label><br>
+                <form>
+                    <hr>
+                    <h5>Type:</h5>
+                    <div class="row">
+                        <div class="col-lg-5 offset-lg-1" align="left">
+                            <input class="form-check-input tipovalor" type="checkbox" value="1" id="tipo1">
+                            <label for="tema1">Normal</label><br>
+
+                            <input class="form-check-input tipovalor" type="checkbox" value="2" id="tipo2">
+                            <label for="tema1">Fighting</label><br>
+
+                            <input class="form-check-input tipovalor" type="checkbox" value="3" id="tipo3">
+                            <label for="tema1">Flying</label><br>
+
+                            <input class="form-check-input tipovalor" type="checkbox" value="4" id="tipo4">
+                            <label for="tema1">Poison</label><br>
+
+                            <input class="form-check-input tipovalor" type="checkbox" value="5" id="tipo5">
+                            <label for="tema1">Ground</label><br>
+
+                            <input class="form-check-input tipovalor" type="checkbox" value="6" id="tipo6">
+                            <label for="tema1">Rock</label><br>
+
+                            <input class="form-check-input tipovalor" type="checkbox" value="7" id="tipo7">
+                            <label for="tema1">Bug</label><br>
+
+                            <input class="form-check-input tipovalor" type="checkbox" value="8" id="tipo8">
+                            <label for="tema1">Ghost</label><br>
+
+                            <input class="form-check-input tipovalor" type="checkbox" value="9" id="tipo9">
+                            <label for="tema1">Steel</label><br>
+
+                        </div>
+                        <div class="col-lg-5">
+                            <div align="left">
+
+                                <input class="form-check-input tipovalor" type="checkbox" value="10" id="tipo10">
+                                <label for="tema1">Fire</label><br>
+
+                                <input class="form-check-input tipovalor" type="checkbox" value="11" id="tipo11">
+                                <label for="tema1">Water</label><br>
+
+                                <input class="form-check-input tipovalor" type="checkbox" value="12" id="tipo12">
+                                <label for="tema1">Grass</label><br>
+
+                                <input class="form-check-input tipovalor" type="checkbox" value="13" id="tipo13">
+                                <label for="tema1">Electric</label><br>
+
+                                <input class="form-check-input tipovalor" type="checkbox" value="14" id="tipo14">
+                                <label for="tema1">Psychic</label><br>
+
+                                <input class="form-check-input tipovalor" type="checkbox" value="15" id="tipo15">
+                                <label for="tema1">Ice</label><br>
+
+                                <input class="form-check-input tipovalor" type="checkbox" value="16" id="tipo16">
+                                <label for="tema1">Dragon</label><br>
+
+                                <input class="form-check-input tipovalor" type="checkbox" value="17" id="tipo17">
+                                <label for="tema1">Dark</label><br>
+
+                                <input class="form-check-input tipovalor" type="checkbox" value="18" id="tipo18">
+                                <label for="tema1">Fairy</label><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <h5>Gender:</h5>
+
+                    <div class="col-lg-5 offset-lg-1" align="left">
+                        <input class="form-check-input generovalor" type="radio" id="genero1" value="1" name="genero">
+                        <label for="tema1">Female</label><br>
+
+                        <input class="form-check-input generovalor" type="radio" id="genero2" value="2" name="genero">
+                        <label for="tema1">Male</label><br>
+
+                        <input class="form-check-input generovalor" type="radio" id="genero3" value="3" name="genero">
+                        <label for="tema1">Genderless</label><br>
+                    </div>
+                    
+                    <button class="btn btn-warning" style="margin-top: 2em;" type="button" id="boton">Filter</button>
+
+                </form>
+
+                <hr>
+
+                <label>Para el siguiente Sprint: <br>Filtro de Colores</label>
+
+                <form role="group">
+                    <button type="button" class="btn color"></button>
+                    <button type="button" class="btn color-1"></button>
+                    <button type="button" class="btn color-2"></button>
+                    <button type="button" class="btn color-3"></button>
+                    <button type="button" class="btn color-4"></button>
+                </form>
+            
+                <form role="group">
+                    <button type="button" class="btn color-5"></button>
+                    <button type="button" class="btn color-6"></button>
+                    <button type="button" class="btn color-7"></button>
+                    <button type="button" class="btn color-8"></button>
+                    <button type="button" class="btn color-9"></button>
+                </form>
+
+            </div>
+
+            <div class="col-lg-10">
+                <div class="container mt-5">
+                    <div class="d-flex align-items-center">
+                        <i style="color:yellow; font-size:x-large" class="fa fa-search"
+                            aria-hidden="true"></i>&nbsp;&nbsp;
+                        <input type="text" class="form-control my-2" id="buscadorbar" placeholder="search">
+                    </div>
+
+                    <!--      <ul id="pokemoncontainer">   </ul>  -->
+                </div>
+                <h5>Choose a pokemon to get more information</h5>
+
+                <div class="pokemon-container" id="pokemoncontainer">
+                </div>
+
+                <div style="padding: 5em 0 5em 0;">
+                    <button id="lmbutton" class="btn btn-warning" onclick="cargaMasPokemones()">Load more</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- 
+    <div style="padding: 5em 0 5em 0;">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPokemon">Abrir
+            Modal</button>
+    </div> -->
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalPokemon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-5" style="background-color: black;">
+                                <img style="margin-top: 8em;" src="assets/img/modal-construccion.png" width="80%">
+                            </div>
+                            <div class="col-7 inline-block">
+                                <h2>Pokemon #001</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut sapiente at qui
+                                    accusamus nostrum est eligendi, dolor dolorum, necessitatibus praesentium?
+                                    Cumque iusto eligendi atque fugiat perferendis nihil expedita aliquid?</p>
+                                <table class="table table-dark">
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2" class="table-active">Width</td>
+                                            <td class="pp">Lorem</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="table-active">Height</td>
+                                            <td>Lorem</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="table-active">Category</td>
+                                            <td>Lorem</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="table-active">Gender</td>
+                                            <td>Lorem</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="table-active">Habitat</td>
+                                            <td>Lorem</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="table-active">Color</td>
+                                            <td>Lorem</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>Types:</p>
+                                Lorem, Lorem
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h3 style="padding: 1em 0 1em 0;">-- Evolution --</h3>
+                            <div class="col-1"></div>
+                            <div class="col-2" align="center">
+                                <img src="assets/img/logo.png" style="background-color: black;" width="50%">
+                                <p>Pokemon name1</p>
+                            </div>
+                            <div class="col-2" align="center"><img width="20%" src="assets/img/fecla.png">
+                            </div>
+                            <div class="col-2" align="center">
+                                <img src="assets/img/logo.png" style="background-color: black;" width="50%">
+                                <p>Pokemon name2</p>
+                            </div>
+                            <div class="col-2" align="center"><img width="20%" src="assets/img/fecla.png">
+                            </div>
+                            <div class="col-2" align="center">
+                                <img src="assets/img/logo.png" style="background-color: black;" width="50%">
+                                <p>Pokemon name3</p>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logica JavaScript -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Cargar Más -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
